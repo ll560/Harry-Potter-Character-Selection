@@ -50,13 +50,17 @@ addHouses();
 // //1. create function to emphasize the paragraph and characters
 const emphasize = () => {
     //select the houses   
+
+    let newHouses =document.getElementsByClassName("gryffindor", "hufflepuff", "ravenclaw", "slytherin");
     
-    let house = ["gryffindor", "hufflepuff", "ravenclaw", "slytherin"]
-    console.log(house)
+    console.log(newHouses)
+    //let newHouses = ["gryffindor", "hufflepuff", "ravenclaw", "slytherin"]-----> why does this not work?
+    // console.log(house)
+   
     //turn on emphasis for that house 
    
-for (let i=0; i<house.length; i++)
-house.classList.toggle("emphasis");
+for (let i=0; i<newHouses.length; i++)
+newHouses[i].classList.toggle("emphasis");
 
 
 }
